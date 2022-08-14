@@ -158,28 +158,32 @@
 }
 
 #doorsRightCol{
-  flex-basis: 40vw;
-  flex-shrink: 0;
+  margin-left: auto;
 }
 
 #phoneLink{
   display: flex;
+  height: 100%;
 }
 
 .phone{
   margin: auto;
+  width: 30vw;
 }
 
-#phoneNumber{
-  position: absolute;
-  font-size: 6vw;
-  color: #5b2d7d;
-  font-family: 'outfit';
-  font-weight: bold;
-  width: 40vw;
-  text-align: center;
-  top: 50%;
-  transform: translate(0, -50%);
+.animals{
+  position: relative;
+  top: 15vw;
+  width: 100%;
+}
+
+.Testimonials{
+  background-color: #e9e9e9;
+  margin-top: -5px;
+}
+
+.Testimonials .sectionTitle{
+  margin: auto;
 }
 
 @media (max-width: 1000px) {

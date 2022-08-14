@@ -4,6 +4,7 @@ import logoText from './logoText2.svg';
 import karenAndDog from './photos/karenAndDog.jpg';
 import shield from './shield.svg';
 import phone from './phone.svg';
+import animals from './photos/animals.png';
 import './App.css';
 import { Link, Path, To } from 'react-router-dom';
 import { NumberLiteralType } from 'typescript';
@@ -90,9 +91,17 @@ all major credit cards.</p>
       <div className='col' id="doorsRightCol">
         <a id="phoneLink" href='tel:5072621896'>
           <img src={phone} className="phone" alt="phone"></img>
-          <p id="phoneNumber">507-262-1896</p>
         </a>
       </div>
+    </div>
+  );
+}
+
+function Testimonials(){
+  return (
+    <div className='Testimonials section'>
+      <h1 className='sectionTitle'>Testimonials</h1>
+      <div></div>
     </div>
   );
 }
@@ -105,14 +114,16 @@ function App() {
         <nav className="HomeRouter">
           <div className='routerLinks'>
             <PageLink page='/process' text='Our Process'/>
-            <PageLink page='/testimonials' text='Testimonials'/>
-            <PageLink page='/contact' text='Contact Us'/>
             <PageLink page='/about' text='About Us'/>
+            <PageLink page='/contact' text='Contact Us'/>
+            <PageLink page='/testimonials' text='Testimonials'/>
           </div>
         </nav>
         <HereToHelp/>
         <ProfessionalService/>
         <OurDoors/>
+        <img src={animals} className='animals' alt='animal_gallery'/>
+        <Testimonials/>
       </Scrollbars>
     </div>
   );

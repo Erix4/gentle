@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'outfit';/*not licensed for professional use ($15 fee)*/
+  font-weight: normal;
+  src: url('/assets/Outfit-Regular.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'outfit';/*not licensed for professional use ($15 fee)*/
+  font-weight: bold;
+  src: url('/assets/Outfit-Bold.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100vw;
+  height: 100vh;
+}
+
+.Header{
+  background-color: #5b2d7d;
+  position: absolute;
+  height: 15vw;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.App-logo{
+  margin: 1.5%;
+  margin-left: 15%;
+}
+
+.App-logo-text{
+  height: 80%;
+  margin: auto;
+  margin-right: 15%;
+}
+
+.HomeRouter{
+  height: 5%;
+  top: 15vw;
+  background-color: #e9e9e9;
+  position: relative;
+}
+
+.routerLinks{
+  position: relative;
+  width: 60%;
+  left: 20%;
+  height: 100%;
+  display: flex;
+}
+
+.PageContainer{
+  width: 25%;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.PageLink{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.PageLink:hover{
+  background-color: #cac7c7;
+  cursor: pointer;
+}
+
+.PageLink p{
+  margin: auto;
+  color: black;
+  font-size: 110%;
+}
+
+.HereToHelp{
+  position: relative;
+  display: flex;
+  top: 15vw;
+}
+
+.col{
+  padding: 2.5%;
+}
+
+#helpColRight{
+  margin-left: auto;
+}
+
+.sectionTitle{
+  font-family: 'outfit';
+  font-weight: normal;
+  font-size: 4vw;
+}
+
+.sectionText{
+  font-family: 'outfit';
+  font-weight: normal;
+  font-size: 2vw;
+}
+
+.karenAndDog{
+  object-fit: cover;
+  width: 20vw;
+}
+
+.buttonLink{
+  background-color: #5b2d7d;
+  margin-top: 2vw;
+  border-radius: 1.5vw;
+  width: fit-content;
+}
+
+.buttonLink:hover{
+  background-color: #9d7ab5;
+}
+
+.buttonLink .link{
+  width: fit-content;
+  height: 100%;
+  padding: .5vw;
+  display: flex;
+  padding-left: 2.5vw;
+  padding-right: 2vw;
+}
+
+.buttonText{
   color: white;
+  margin: auto;
+  font-size: 2vw;
+  font-family: 'outfit';
+  margin-right: 1vw;
+  padding-bottom: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonLink span{
+  color: white;
+  font-size: 4vw;
+  margin: -.5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ProfessionalService{
+  background-color: #e9e9e9;
+  position: relative;
+  top: 15vw;
+  height: 50%;
+}
+
+@media (max-width: 1000px) {
+  .routerLinks{
+    width: 80%;
+    left: 10%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .karenAndDog{
+    width: 30vw;
+  }
+
+  .sectionTitle{
+    font-size: 6vw;
+  }
+  
+  .sectionText{
+    font-size: 3vw;
+  }
+
+  .buttonLink .link{
+    padding: 1vw;
+    padding-left: 3.5vw;
+    padding-right: 3vw;
+  }
+
+  .buttonText{
+    font-size: 3vw;
+    margin-right: 1.5vw;
+  }
+
+  .buttonLink span{
+    font-size: 6vw;
+    margin: -1vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .routerLinks{
+    width: 100%;
+    left: 0%;
+  }
+
+  .link{
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .HomeRouter{
+    height: 4%;
+  }
+
+  .link{
+    font-size: 60%;
   }
 }

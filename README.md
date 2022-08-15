@@ -5,4 +5,4 @@ The website can be accessed [here](https://mngentlegoodbyes.com), but the curren
 
 ## The tools
 
-The website is built using React, create-react-app, Typescript, and react-custom-scrollbars.
+The website is built using React, create-react-app, Typescript, react-custom-scrollbars, Marked, and DOMPurify.

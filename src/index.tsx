@@ -4,8 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Process from './routes/process';
-import Testimonials from './routes/testimonials';
+import Page from './pages';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,10 +15,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App/>} />
-        <Route path='process' element={<Process/>} />
-        <Route path='testimonials' element={<Testimonials/>} />
-        <Route path='about' element={<App/>} />
-        <Route path='contact' element={<App/>} />
+        <Route path='process' element={<Page idx={0}/>} />
+        <Route path='about' element={<Page idx={1}/>} />
+        <Route path='contact' element={<Page idx={2}/>} />
+        <Route path='testimonials' element={<Page idx={3}/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

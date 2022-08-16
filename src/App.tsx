@@ -97,13 +97,36 @@ all major credit cards.</p>
   );
 }
 
-function Testimonials(){
-  return (
-    <div className='Testimonials section'>
-      <h1 className='sectionTitle'>Testimonials</h1>
-      <div></div>
-    </div>
-  );
+class Testimonials extends React.Component<{}, {testimonials: string[]}>{
+  constructor(props: {}){
+    super(props);
+    //
+    this.state = {
+      testimonials: ['My cat is dead']//start with empty list
+    }
+  }
+  //
+  createTestimonial(testimonial: string){
+    this.setState({
+      testimonials: this.state.testimonials.concat(testimonial)
+    });
+  }
+  //
+  render(){
+    let tstm: any[] = [];
+    this.state.testimonials.forEach((text, idx) => {
+      tstm.push(<div key={idx}></div>);
+    });
+    //
+    return (
+      <div className='Testimonials section'>
+        <h1 className='sectionTitle'>Testimonials</h1>
+        <div>
+          <p>hello!</p>
+        </div>
+      </div>
+    );
+  }
 }
 
 function App() {

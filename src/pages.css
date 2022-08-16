@@ -34,12 +34,30 @@
     margin: 0;
 }
 
+.Page .buttonLink:hover{
+    /*background-color: #cac7c7;*/
+    background-color: #9d7ab5;
+}
+
+.Page .buttonLink .link{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
 .Page .buttonText{
     color: #5b2d7d;
 }
 
+.Page .buttonLink:hover .buttonText{
+    color: white;
+}
+
 .Page .buttonLink span{
     color: #5b2d7d;
+}
+
+.Page .buttonLink:hover span{
+    color: white;
 }
 
 .PageHeader h1{
@@ -67,9 +85,49 @@
     margin-bottom: 0.5%;
 }
 
+.pageBody h3{
+    font-weight: bold;
+    font-size: 2vw;
+    margin-bottom: 1%;
+}
+
 .pageBody p{
     font-size: 2vw;
     margin-bottom: 2%;
+}
+
+.pageBody code{
+    background-color: #e9e9e9;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    padding-top: .1vw;
+    padding-bottom: .1vw;
+    border: 0.2vw solid black;
+}
+
+.pageBody pre{
+    background-color: #e9e9e9;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    border: 0.2vw solid black;
+    margin-bottom: 2vw;
+}
+
+.pageBody pre code{
+    background-color: #e9e9e9;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    padding-top: .1vw;
+    padding-bottom: .1vw;
+    border: none;
+}
+
+.pageBody ol{
+    font-size: 2vw;
+}
+
+.pageBody ul{
+    font-size: 2vw;
 }
 
 @media (max-width: 1000px) {

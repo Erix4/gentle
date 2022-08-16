@@ -3,6 +3,7 @@ import React from 'react';
 import {marked} from "marked";
 import './pages.css';
 import { Scrollbars } from 'react-custom-scrollbars';
+import DOMPurify from 'dompurify';
 
 export function Home(){
     return (
@@ -43,7 +44,7 @@ type MyState ={
   text: string
 }
 
-export default class Page  extends React.Component<MyProps, MyState>{
+export default class Page extends React.Component<MyProps, MyState>{
   constructor(props: MyProps){
     super(props);
     //
@@ -52,7 +53,7 @@ export default class Page  extends React.Component<MyProps, MyState>{
     this.state = {
       idx: props.idx,
       title: "Loading...",
-      text: "Loading..."
+      text: ""
     }
     //
   }
@@ -72,7 +73,7 @@ export default class Page  extends React.Component<MyProps, MyState>{
       //
       this.setState({
         title: header,
-        text: marked(curText)
+        text: DOMPurify.sanitize(marked(curText))
       });
     });
   }

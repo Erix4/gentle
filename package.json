@@ -1,6 +1,6 @@
 {
   "name": "gentle",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && aws s3 sync ./build s3://REPLACE --delete",
+    "deploy": "npm version patch --no-git-tag-version && npm run build && aws s3 sync ./build s3://mngentlegoodbyes.com --delete",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -7,7 +7,7 @@ import phone from './phone.svg';
 import animals from './photos/animals.png';
 import './App.css';
 import { Link, Path, To } from 'react-router-dom';
-import { NumberLiteralType } from 'typescript';
+import { isThisTypeNode, NumberLiteralType } from 'typescript';
 import { Scrollbars } from 'react-custom-scrollbars';
 
 function Header(){
@@ -44,12 +44,10 @@ function HereToHelp(){
     <div className="HereToHelp section">
       <div className='col' id='helpColLeft'>
         <h1 className='sectionTitle'>We are here to help</h1>
-        <p className='sectionText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore
-magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p className='sectionText'>In your time of need, Gentle Goodbyes is here to provide a
+        more personal and humane passing for your pet. In our experience, we've
+         found that allowing families to be together comfortably at home while saying goodbye
+         allows everyone to be more at peace. You and your pet deserve a gentler way to say goodbye.</p>
         <ButtonLink page='/process' text='Our Process'/>
       </div>
       <div className='col' id='helpColRight'>
@@ -67,9 +65,9 @@ function ProfessionalService(){
       </div>
       <div className='col'  id='profColRight'>
         <h1 className='sectionTitle'>Professional Service</h1>
-        <p className='sectionText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore
-magna aliqua.</p>
+        <p className='sectionText'>Dr. Karen is an established veterinarian with
+        experience in small animal Veterinary Clinics. She can ensure a peaceful
+        and humane experience for you and your loved ones.</p>
         <ButtonLink page='/about' text='About Us'/>
       </div>
     </div>
@@ -81,9 +79,10 @@ function OurDoors(){
     <div className='OurDoors section'>
       <div className='col' id="doorsLeftCol">
         <h1 className='sectionTitle'>Our doors are always open</h1>
-        <p className='sectionText'>I regret to say that I do have limited availability due to working
-in other clinics and raising a family. Please contact me so we
-can work together to find a time that we can help. My fee is
+        <p className='sectionText'>Please contact me directly so we
+find a time that we can help. Although I do have limited availability,
+due to working in other clinics and raising a family, I'll do my best to
+be accomodating of your schedule. My fee is
 $220 and includes a clay paw print. I accept cash, checks and
 all major credit cards.</p>
         <ButtonLink page='/contact' text='Contact Us'/>
@@ -97,42 +96,82 @@ all major credit cards.</p>
   );
 }
 
-class Testimonials extends React.Component<{}, {testimonials: string[]}>{
+class Testimonials extends React.Component<{}, {testimonials: string[], curT: number, timeId: NodeJS.Timeout | undefined}>{
   constructor(props: {}){
     super(props);
     //
     this.state = {
-      testimonials: ['My cat is dead']//start with empty list
+      testimonials: ['"​We would recommend your service to anybody."',
+        '​"Thanks for making this day better with your kindness and heartfelt consideration and compassion."',
+        '"​Dr. Karen Exline is amazing! Wonderful service during a difficult time! So thankful! God bless!"',
+        '"Thank you soooo so much for helping make this as easy as it did. I\'m so grateful to have the opportunity to have her at home. The foot print made my heart melt, I was not expecting to have anything left but pictures and memories. Thank you thank you."',
+        '"Thank you and Wendy for your visit today. It was an incredible privilege to be with Aeowyn in peace in her own home."'],
+      curT: 0,
+      timeId: undefined
     }
   }
   //
-  createTestimonial(testimonial: string){
-    this.setState({
-      testimonials: this.state.testimonials.concat(testimonial)
-    });
+  componentDidMount(){
+    this.setState({timeId: setTimeout(this.newTestimonial.bind(this), 5000)});
+    console.log(this.state.timeId);//the id system doesn't work
+  }
+  //
+  handleClickLeft(event: React.MouseEvent<HTMLDivElement>){this.newTestimonial(true, -1);}
+  handleClickRight(event: React.MouseEvent<HTMLDivElement>){this.newTestimonial(true);}
+  //
+  newTestimonial(clear: boolean = false, amount: number = 1){
+    this.setState({curT: this.mod2((this.state.curT + amount), this.state.testimonials.length)});//move to next testimonial
+    //
+    if (clear){
+      console.log(`clearing ${this.state.timeId}`);
+      clearTimeout(this.state.timeId);
+      //
+      this.setState({timeId: setTimeout(this.newTestimonial.bind(this), 10000)});//extra time after user input
+      console.log(`new id ${this.state.timeId}`);
+      return;
+    }else{
+      this.setState({timeId: setTimeout(this.newTestimonial.bind(this), 5000)});
+    }
+    //
+  }
+  //
+  mod2(input: number, cap: number): number{
+    if(input < 0){
+      return this.mod2(cap + input, cap);
+    }
+    return input % cap;
   }
   //
   render(){
-    let tstm: any[] = [];
-    this.state.testimonials.forEach((text, idx) => {
-      tstm.push(<div key={idx}></div>);
-    });
+    //
     //
     return (
       <div className='Testimonials section'>
         <h1 className='sectionTitle'>Testimonials</h1>
-        <div>
-          <p>hello!</p>
+        <div className='carousel'>
+          <div><span className="material-icons" onClick={this.handleClickLeft.bind(this)}>chevron_left</span></div>
+          <p>{this.state.testimonials[this.state.curT]}</p>
+          <div><span className="material-icons"  onClick={this.handleClickRight.bind(this)}>chevron_right</span></div>
         </div>
       </div>
     );
   }
 }
 
+export function Footer({classOverride}: {classOverride: string}){
+  return (
+    <div className={classOverride}>
+      <h1>MN Gentle Goodbyes LLC</h1>
+      <h2>507-262-1896</h2>
+      <h3>© 2021 Gentle Goodbyes LLC | All Rights Reserved.</h3>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="App">
-      <Scrollbars>
+      <Scrollbars className='scrollContainer'>
         <Header/>
         <nav className="HomeRouter">
           <div className='routerLinks'>
@@ -147,6 +186,7 @@ function App() {
         <OurDoors/>
         <img src={animals} className='animals' alt='animal_gallery'/>
         <Testimonials/>
+        <Footer classOverride='Footer section'/>
       </Scrollbars>
     </div>
   );

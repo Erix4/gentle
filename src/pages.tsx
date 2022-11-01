@@ -4,6 +4,7 @@ import {marked} from "marked";
 import './pages.css';
 import { Scrollbars } from 'react-custom-scrollbars';
 import DOMPurify from 'dompurify';
+import { Footer } from './App';
 
 export function Home(){
     return (
@@ -80,10 +81,13 @@ export default class Page extends React.Component<MyProps, MyState>{
   //
   render(){
     return (
-      <Scrollbars className='plx'>
-        <div className="Page">
-          <PageHeader text={this.state.title}/>
-          <div className='pageBody' dangerouslySetInnerHTML={{__html: this.state.text}}></div>
+      <Scrollbars className='scrollContainer'>
+        <div id='PagesContainer'>
+          <div className="Page">
+            <PageHeader text={this.state.title}/>
+            <div className='pageBody' dangerouslySetInnerHTML={{__html: this.state.text}}></div>
+          </div>
+          <Footer classOverride='Footer'/>
         </div>
       </Scrollbars>
     );

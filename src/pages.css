@@ -14,8 +14,12 @@
     margin: 0;
 }
 
-.plx{
+.scrollContainer{
     position: absolute !important;
+}
+
+#PagesContainer{
+    height: 100vh;
 }
 
 .Page{
@@ -41,7 +45,6 @@
 
 .Page .buttonLink .link{
     padding-left: 2vw;
-    padding-right: 2vw;
   }
 
 .Page .buttonText{
@@ -111,6 +114,7 @@
     border-radius: 0.5vw;
     border: 0.2vw solid black;
     margin-bottom: 2vw;
+    overflow-y: auto;
 }
 
 .pageBody pre code{
@@ -148,9 +152,21 @@
         font-size: 6vw;
         margin-bottom: 1%;
     }
+
+    .pageBody h3{
+        font-size: 4vw;
+    }
     
     .pageBody p{
         font-size: 4vw;
         margin-bottom: 3%;
+    }
+
+    .pageBody ol{
+        font-size: 4vw;
+    }
+    
+    .pageBody ul{
+        font-size: 4vw;
     }
 }

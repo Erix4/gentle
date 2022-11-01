@@ -12,6 +12,11 @@
 
 *{
   margin: 0;
+  box-sizing: border-box;
+}
+
+.scrollContainer{
+  position: absolute !important;
 }
 
 .App{
@@ -85,9 +90,6 @@
   top: 15vw;
 }
 
-.HereToHelp{
-}
-
 .col{
   padding: 2.5%;
 }
@@ -140,7 +142,7 @@
   font-size: 2vw;
   font-family: 'outfit';
   margin-right: 1vw;
-  padding-bottom: 3px;
+  padding-bottom: .2vw;
 }
 
 .buttonLink span{
@@ -158,7 +160,7 @@
 }
 
 .shield{
-  width: 20vw;
+  width: 40vw;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -186,10 +188,66 @@
 .Testimonials{
   background-color: #e9e9e9;
   margin-top: -5px;
+  display: block;
+  text-align: center;
 }
 
 .Testimonials .sectionTitle{
+  padding-top: 1.5vw;
+}
+
+.carousel{
+  display: flex;
+  padding: 1vw;
+  padding-bottom: 2vw;
+}
+
+.carousel p{
   margin: auto;
+  font-size: 2vw;
+  font-family: 'outfit';
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.carousel span{
+  font-size: 5vw;
+  cursor: pointer;
+}
+
+.carousel span:hover{
+  color: #5b2d7d;
+}
+
+.Footer{
+  display: block;
+  font-family: 'outfit';
+  text-align: center;
+  padding: 2vw;
+}
+
+.Footer h1{
+  font-size: 2vw;
+  font-weight: normal;
+}
+
+.Footer h2{
+  font-size: 1.5vw;
+  font-weight: normal;
+  padding: .5vw;
+}
+
+.Footer h3{
+  font-size: 1vw;
+  font-weight: normal;
+}
+
+#PagesContainer .Footer{
+  background-color: #e9e9e9;
+  /*position: absolute;*/
+  bottom: 0;
+  height: fit-content;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -225,6 +283,10 @@
     font-size: 6vw;
     margin: -1vw;
   }
+
+  .carousel p{
+    font-size: 4vw;
+  }
 }
 
 @media (max-width: 700px) {
@@ -236,6 +298,22 @@
   .link{
     font-size: 90%;
   }
+
+  .Footer h1{
+    font-size: 4vw;
+    font-weight: normal;
+  }
+  
+  .Footer h2{
+    font-size: 3vw;
+    font-weight: normal;
+    padding: .5vw;
+  }
+  
+  .Footer h3{
+    font-size: 2vw;
+    font-weight: normal;
+  }
 }
 
 @media (max-width: 400px) {
@@ -245,5 +323,31 @@
 
   .link{
     font-size: 60%;
+    font-weight: bold;
+  }
+
+  .buttonLink .link{
+    font-weight: normal;
+  }
+
+  #helpColRight{
+    display: none;
+  }
+
+  #profColLeft{
+    display: none;
+  }
+
+  #doorsRightCol{
+    display: none;
+  }
+
+  .sectionTitle{
+    font-size: 7vw;
+    font-weight: bold;
+  }
+
+  .sectionText{
+    font-size: 4vw;
   }
 }

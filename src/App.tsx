@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo1.svg';
 import logoText from './logoText2.svg';
 import karenAndDog from './photos/karenAndDog.jpg';
@@ -169,6 +169,10 @@ export function Footer({classOverride}: {classOverride: string}){
 }
 
 function App() {
+  useEffect(() => {
+    document.title = 'MN Gentle Goodbyes';
+  });
+  //
   return (
     <div className="App">
       <Scrollbars className='scrollContainer'>

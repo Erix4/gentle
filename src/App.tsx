@@ -101,11 +101,11 @@ class Testimonials extends React.Component<{}, {testimonials: string[], curT: nu
     super(props);
     //
     this.state = {
-      testimonials: ['"​We would recommend your service to anybody."',
-        '​"Thanks for making this day better with your kindness and heartfelt consideration and compassion."',
-        '"​Dr. Karen Exline is amazing! Wonderful service during a difficult time! So thankful! God bless!"',
+      testimonials: ['"We would recommend your service to anybody."',
+        '"Thanks for making this day better with your kindness and heartfelt consideration and compassion."',
+        '"Dr. Karen Exline is amazing! Wonderful service during a difficult time! So thankful! God bless!"',
         '"Thank you soooo so much for helping make this as easy as it did. I\'m so grateful to have the opportunity to have her at home. The foot print made my heart melt, I was not expecting to have anything left but pictures and memories. Thank you thank you."',
-        '"Thank you and Wendy for your visit today. It was an incredible privilege to be with Aeowyn in peace in her own home."'],
+        '"Thank you and Wendy for your visit today. It was an incredible privilege to be with Aeowyn in peace in her own home."'],
       curT: 0,
       timeId: undefined
     }

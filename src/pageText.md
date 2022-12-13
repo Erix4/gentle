@@ -27,3 +27,7 @@ Although I do have limited availability, due to working in other clinics and rai
 "Thank you soooo so much for helping make this as easy as it did. I\'m so grateful to have the opportunity to have her at home. The foot print made my heart melt, I was not expecting to have anything left but pictures and memories. Thank you thank you."
 
 "Thank you and Wendy for your visit today. It was an incredible privilege to be with Aeowyn in peace in her own home."
+
+"Very professional and empathetic."
+
+"I would recommend your servics to anyone that has to put there animal down. Dr Karen made is easier to let our dog go and say goodbye. She was very nice and respectful. It felt like she was part of the family. Thank you again!"

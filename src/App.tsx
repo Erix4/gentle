@@ -105,7 +105,9 @@ class Testimonials extends React.Component<{}, {testimonials: string[], curT: nu
         '"Thanks for making this day better with your kindness and heartfelt consideration and compassion."',
         '"Dr. Karen Exline is amazing! Wonderful service during a difficult time! So thankful! God bless!"',
         '"Thank you soooo so much for helping make this as easy as it did. I\'m so grateful to have the opportunity to have her at home. The foot print made my heart melt, I was not expecting to have anything left but pictures and memories. Thank you thank you."',
-        '"Thank you and Wendy for your visit today. It was an incredible privilege to be with Aeowyn in peace in her own home."'],
+        '"Thank you and Wendy for your visit today. It was an incredible privilege to be with Aeowyn in peace in her own home."',
+        '"Very professional and empathetic."',
+        '"I would recommend your services to anyone that has to put their animal down. Dr Karen made it easier to let our dog go and say goodbye. She was very nice and respectful. It felt like she was part of the family. Thank you again!"'],
       curT: 0,
       timeId: undefined
     }

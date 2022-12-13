@@ -1,6 +1,6 @@
 >Our Process
 
-Making the loving decision to say goodbye is the most difficult thing we do for our pets. It is our goal to make this day easier in any way. Prior to the appointment, Dr. Karen will call and talk a little bit about what is going on with your pet. This will allow her to make a plan that fits your family best. In most cases your pet will be sedated with a quick under-the-skin injection that allows them to relax and fall asleep. The final injection does need to go into a vein. Everything used is an overdose of anesthesia and pain medication. Our hope is that your pet will fall asleep gently, and after the final medication they will say their forever goodbye. 
+Making the loving decision to say goodbye is the most difficult thing we do for our pets. It is our goal to make this day easier in any way. Prior to the appointment, Dr. Karen will call and talk a little bit about what is going on with your pet. This will allow her to make a plan that fits your family best. In most cases your pet will be sedated with a quick under-the-skin injection that allows them to relax and fall asleep. The final injection does need to go into a vein. Everything used is a form of anesthesia and pain medication. Our hope is that your pet will fall asleep gently, and after the final medication they will say their forever goodbye. 
 
 The only thing you can do to physically prepare is have a space picked out that you would like to be in. We only need a small area so that everyone can be around the pet. Usually a living room or outside space works well, but we can usually adapt to wherever makes you and your pet most comfortable.
 
@@ -11,6 +11,8 @@ MN Gentle Goodbyes is a small privately run company owned by Dr. Karen Exline si
 >Contact Us
 
 Please reach out if you think you would like our service. You can call or text 507-262-1896 or email gentlegoodbyesllc@gmail.com. 
+
+Although I do have limited availability, due to working in other clinics and raising a family, I'll do my best to be accomodating of your schedule. My fee is $240 and includes a clay paw print. I accept cash, checks and all major credit cards.
 
 >Testimonials
 

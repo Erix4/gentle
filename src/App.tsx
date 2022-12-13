@@ -83,7 +83,7 @@ function OurDoors(){
 find a time that we can help. Although I do have limited availability,
 due to working in other clinics and raising a family, I'll do my best to
 be accomodating of your schedule. My fee is
-$220 and includes a clay paw print. I accept cash, checks and
+$240 and includes a clay paw print. I accept cash, checks and
 all major credit cards.</p>
         <ButtonLink page='/contact' text='Contact Us'/>
       </div>
@@ -113,7 +113,7 @@ class Testimonials extends React.Component<{}, {testimonials: string[], curT: nu
   //
   componentDidMount(){
     this.setState({timeId: setTimeout(this.newTestimonial.bind(this), 5000)});
-    console.log(this.state.timeId);//the id system doesn't work
+    //console.log(this.state.timeId);//the id system doesn't work
   }
   //
   handleClickLeft(event: React.MouseEvent<HTMLDivElement>){this.newTestimonial(true, -1);}

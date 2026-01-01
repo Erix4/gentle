@@ -1,10 +1,9 @@
 //code created and maintained by Eric Patton
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Page from './pages';
 
@@ -21,8 +20,9 @@ root.render(
         <Route path='/' element={<App/>} />
         <Route path='process' element={<Page idx={0}/>} />
         <Route path='about' element={<Page idx={1}/>} />
-        <Route path='contact' element={<Page idx={2}/>} />
-        <Route path='testimonials' element={<Page idx={3}/>} />
+        <Route path='aftercare' element={<Page idx={2}/>} />
+        <Route path='contact' element={<Page idx={3}/>} />
+        <Route path='testimonials' element={<Page idx={4}/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

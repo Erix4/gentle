@@ -1,21 +1,18 @@
 import React, { useEffect } from 'react';
 import logo from './logo1.svg';
-import logoText from './logoText2.svg';
 import karenAndDog from './photos/karenAndDog.jpg';
 import shield from './shield.svg';
 import phone from './phone.svg';
 import animals from './photos/animals.png';
 import './App.css';
-import { Link, Path, To } from 'react-router-dom';
-import { isThisTypeNode, NumberLiteralType } from 'typescript';
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Link } from 'react-router-dom';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 function Header(){
   return (
     <div className="Header">
       <img src={logo} className="App-logo" alt="logo" />
-      <img src={logoText} className="App-logo-text" alt="logo" />
-      {/*<h1>MN Gentle Goodbyes LLC</h1>*/}
+      <h1>Mankato Pet End of Life Services</h1>
     </div>
   );
 }
@@ -44,11 +41,12 @@ function HereToHelp(){
     <div className="HereToHelp section">
       <div className='col' id='helpColLeft'>
         <h1 className='sectionTitle'>We are here to help</h1>
-        <p className='sectionText'>In your time of need, Gentle Goodbyes is here to provide a
+        <p className='sectionText'>In your time of need, Mankato Pet End of Life Services is here to provide a
         more personal and humane passing for your pet. In our experience, we've
          found that allowing families to be together comfortably at home while saying goodbye
          allows everyone to be more at peace. You and your pet deserve a gentler way to say goodbye.</p>
         <ButtonLink page='/process' text='Our Process'/>
+        <ButtonLink page='/aftercare' text='Aftercare Services'/>
       </div>
       <div className='col' id='helpColRight'>
         <img src={karenAndDog} className="karenAndDog" alt="Dr. Karen"></img>
@@ -83,8 +81,8 @@ function OurDoors(){
 find a time that we can help. Although I do have limited availability,
 due to working in other clinics and raising a family, I'll do my best to
 be accomodating of your schedule. My fee is
-$240 and includes a clay paw print. I accept cash, checks and
-all major credit cards.</p>
+$300 and includes a clay paw print. I accept cash, checks and
+all major credit cards (with fee).</p>
         <ButtonLink page='/contact' text='Contact Us'/>
       </div>
       <div className='col' id="doorsRightCol">
@@ -163,16 +161,16 @@ class Testimonials extends React.Component<{}, {testimonials: string[], curT: nu
 export function Footer({classOverride}: {classOverride: string}){
   return (
     <div className={classOverride}>
-      <h1>MN Gentle Goodbyes LLC</h1>
+      <h1>Mankato Pet End of Life Services</h1>
       <h2>507-262-1896</h2>
-      <h3>© 2021 Gentle Goodbyes LLC | All Rights Reserved.</h3>
+      <h3>© 2023 Mankato Pet End of Life Services | All Rights Reserved.</h3>
     </div>
   )
 }
 
 function App() {
   useEffect(() => {
-    document.title = 'MN Gentle Goodbyes';
+    document.title = 'Mankato Pet End of Life Services';
   });
   //
   return (
@@ -183,6 +181,7 @@ function App() {
           <div className='routerLinks'>
             <PageLink page='/process' text='Our Process'/>
             <PageLink page='/about' text='About Us'/>
+            <PageLink page='/aftercare' text='Aftercare Services'/>
             <PageLink page='/contact' text='Contact Us'/>
             <PageLink page='/testimonials' text='Testimonials'/>
           </div>

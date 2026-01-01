@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import {marked} from "marked";
 import './pages.css';
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 import DOMPurify from 'dompurify';
 import { Footer } from './App';
 

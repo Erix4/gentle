@@ -6,13 +6,18 @@ The only thing you can do to physically prepare is have a space picked out that 
 
 >About Us
 
-MN Gentle Goodbyes is a small privately run company owned by Dr. Karen Exline since 2019. Dr. Karen graduated from the University of Missouri College of Veterinary Medicine in 2013 and then moved to Minnesota to be close to family. Her career started in a mixed animal practice that provided country calls, including in home euthanasias. During this time Dr. Karen was able to see the peace that this service provided to both the family and pets and wanted to be able to help as many families as possible provide this gentle goodbye. She currently works part time in clinics with dogs and cats as well as providing in home euthanasias. 
+Mankato Pet End of Life Services is a small privately run company owned by Dr. Karen Exline since 2019. Dr. Karen graduated from the University of Missouri College of Veterinary Medicine in 2013 and then moved to Minnesota to be close to family. Her career started in a mixed animal practice that provided country calls, including in home euthanasias. During this time Dr. Karen was able to see the peace that this service provided to both the family and pets and wanted to be able to help as many families as possible provide this gentle goodbye. She currently works part time in clinics with dogs and cats as well as providing in home euthanasias. 
+
+>Aftercare Services
+
+We understand that saying goodbye to your beloved pet is the hardest thing you have to do as a pet owner, and we strive to make this process as easy as possible. I partner with Mankato Pet Cremation (Mankatopetcremation.com) for all aftercare cremation needs. When cremation is elected, Wendy will be present during the euthanasia. This allows us to arrive together, fill out the necessary paperwork and take care of payment all at once. After your pet has passed we will take our bags to the car to give you a few minutes alone and return with a stretcher or blanket so your pet can be brought to her local facility. Home burial is also an option as long as all county, city and/or HOA requirements are followed. 
+
 
 >Contact Us
 
-Please reach out if you think you would like our service. You can call or text 507-262-1896 or email gentlegoodbyesllc@gmail.com. 
+Please reach out if you think you would like our service. You can call or text 507-262-1896 or email mankatopetendoflifeservices@gmail.com. 
 
-Although I do have limited availability, due to working in other clinics and raising a family, I'll do my best to be accomodating of your schedule. My fee is $240 and includes a clay paw print. I accept cash, checks and all major credit cards.
+Although I do have limited availability, due to working in other clinics and raising a family, I'll do my best to be accomodating of your schedule. My fee is $300 and includes a clay paw print. I accept cash, checks and all major credit cards. Credit card use has a 3% fee.
 
 >Testimonials
 

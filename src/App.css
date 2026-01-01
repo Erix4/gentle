@@ -32,9 +32,18 @@
   display: flex;
 }
 
+.Header h1{
+  font-family: 'outfit';
+  font-size: 5vw;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+}
+
 .App-logo{
   margin: 1.5%;
-  margin-left: 15%;
+  margin-left: 20%;
 }
 
 .App-logo-text{
